@@ -1,0 +1,71 @@
+<!--  IDs and Classes in HTML -->
+
+<!--
+
+### IDs
+    ID is an identifier which must be unique in the whole HTML document. 
+    It is used to find an element while linking, scripting, or styling. 
+    
+    Classes allow CSS and JavaScript to select and access specific elements. 
+
+Here, I'll try to explain with the vert basic example. When a new child is born, we urge to give him a name or his identity by which he will be known further. Or if you are having a pet, you must have given him some name to call. In the same way, IDs refer to giving a name to any particular element for its identity. It simply refers giving an identity to an element. We know, no two names can be given to any of the two members of the family. In the same way, one ID can be given to only one element on a website. Therefore, in the below example, the id mainBox cannot be given to any other element.
+
+<div id= "mainBox" class= "redBG">
+
+    Now the question arises what is the need for an ID in HTML? The answer is, while using JavaScript or CSS, we can target one full element and can make the necessary changes in it. In the same way, we can grab the full element and change the border or width or many more things through CSS.
+
+
+### CLASSES
+
+Let us now understand what are classes with an example. Assume that I am having 100 elements in my HTML and I want to give a red background to all the 100 elements. To do this, we have two options. Either we have to select each element and assign a red background to it or we can create a class redBG and assign a red background to it. Then we can give this class to the elements in which we want a red background color. To avoid confusion, I am assuming that the class redBG is already defined.
+
+One point to note here is we can assign only one ID to a particular element but it is not so in the case of classes. An element can have more than one class in itself. The more classes we add in an element, the more property will get added to it.
+
+Classes are denoted by a dot ‘.’ and ID is denoted by hash ‘#’. 
+For example, to get a redBG class in an element we can simply write that element name followed by .redBG 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ids and classes in HTML</title>
+</head>
+
+<body>
+    <h3>Ids and classes tutorial</h3>
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainbox
+    </div>
+    <span class="redBg">    </span>
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    
+    <!-- Just type span.classname and press enter -->
+    <span class="redBG"></span>
+    <!-- Just type span#idname and press enter -->
+    <span id="ids"></span>
+    <!-- Just type span.class1.class2.class3.class4 and press enter -->
+    <span class="class1 class2 cls3"></span>
+
+
+    <!-- Emmit takes div tag as default -->
+    <!-- Just type .classname and press enter -->
+    <div class="redBg"></div>
+
+
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+
+</body>
+
+</html>

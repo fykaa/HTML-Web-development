@@ -1,0 +1,62 @@
+<!--  Inline & Block Elements -->
+<!-- 
+
+    Inline elements are those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of element. On the other hand, block-level elements take up the entire space of its parent element. Let us understand this with an example-
+    
+    If we write any text in the paragraph tag like this-
+    
+    <p>This is a paragraph</p>
+    <p>This is also a paragraph</p>
+    OR
+    <p>This is a paragraph</p> <p>This is also a paragraph</p>
+
+    In both the above examples, we will see the output in both different lines, not in the same line. We want both the texts in the same line but it is not so. Can you think why?
+
+It is because the paragraph tag is a block element. 
+The Block element means that it will take the full width of a single line and does not allow any other content to fit in it. But, if we write both the texts between the <span> tags like-
+
+    <span>This is a paragraph</span> <span>This is also a paragraph</span>
+
+Then we see that both the texts will appear in the same line. It is because the <span> tag is an inline element. It allows all the elements in the same line.
+To understand it more, we can take the help of CSS by applying the border. However, you need not worry about the border as it is a part of CSS. I’m using this just for the case of an example. 
+
+    <p style= “border: 2px solid, red;”>This is a paragraph</p> <p style= “border: 2ox solid blue;”>This is also a paragraph</p>
+
+    <span style= “border: 2px solid red;”>This is a span</span> <span style = “border: 2px solid red;”>This is also a span</span>
+
+The above example shows how inline elements will take only its portion of text whereas the block element will take the whole width of the line. You will understand it more with the help of different colours through CSS. Anchor <a> tags also behaves like an inline element. 
+
+We have two different options of making our text appear in a single line. The first one is either with the help of CSS through borders or with the help of inline elements. As we have reached the end of this tutorial, I want you to find out whether li, em, div is inline or block elements. 
+
+even though I typed "Hello" inside of the li tag and immediately followed it with "World", the single li tag will not allow the "World" to be on the same line. This demonstrates that the li tag is taking 100% of the available width, proving that li is a block level element
+
+Examples of inline elements: <a> <strong> , <em> , <b> , <i> , <q>, <mark> <span>
+Examples of block elements:li, <p> and <div>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline And Block Elements</title>
+</head>
+<body>
+    <p>This is in para</p><p>This is in para too</p> <!--BLOCK ELEMENT-->
+    <span>This is in span </span><span>This is in span too</span> <!--INLINE ELEMENT-->
+
+    <br>
+
+    <li>1</li><li>2</li><li>3</li> <!--Block element-->
+    Hi this is in a <strong>single line</strong> withou<em> new line</em>
+
+    <br>
+
+    <p><strong style="border: 2px solid red;">this is a paragraph</strong></p> <p><a style="border: 2px solid blue;">this is also a paragraph</a></p> 
+
+    <p style="border: 2px solid red;">this is para</p> <p style="border: 2px solid blue;">again para</p>
+    <span style="border: 2px solid red;">this is a span</span> <span style="border: 2px solid red;">this is also a span</span>
+
+</body>
+</html>
